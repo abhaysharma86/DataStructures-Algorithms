@@ -17,6 +17,7 @@ public class BFS {
         buildGraph(adj,1,3);
         buildGraph(adj,2,4);
         buildGraph(adj,3,4);
+        System.out.println("BFS starting from 0:");
         bfsBuild(adj, 0);
     }
     public static void buildGraph(List<List<Integer>> adj, int u, int v)
