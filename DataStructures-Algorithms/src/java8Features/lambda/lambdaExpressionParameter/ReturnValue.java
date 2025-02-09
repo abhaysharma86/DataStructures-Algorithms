@@ -8,10 +8,18 @@ public class ReturnValue {
 
     public static void main(String[] args) {
 
-        boolean fecto = fecto((a, b) -> {
-            return a % b == 0;
-        }, 10, 2);
-        if(fecto){
+        // one approach
+
+//        boolean flag = fecto((a, b) -> {
+//            return a % b == 0;
+//        }, 10, 2);
+
+        // second approach
+
+        ReturnV returnV = (a,b) -> a%b==0;
+        boolean flag = returnV.factor(10, 2);
+
+        if(flag){
             System.out.println(true);
         }else
             System.out.println(false);
