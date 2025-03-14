@@ -1,6 +1,6 @@
 package java8Features.functionalInterfaces.consumerInterface;
 
-import java8Features.functionalInterfaces.consumerInterface.exception.ValidationException;
+import java8Features.exception.ValidationException;
 
 import javax.naming.InvalidNameException;
 import java.util.function.Consumer;

@@ -1,4 +1,4 @@
-package java8Features.functionalInterfaces.consumerInterface.exception;
+package java8Features.exception;
 
 public class ValidationException extends RuntimeException{
 
