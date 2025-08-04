@@ -30,7 +30,7 @@ public class FrequenciesLimitedArray {
             }
 
         }
-        System.out.println(map);
+
         for (int i = 1; i <= arr.length; i++) {
             if (map.get(i) == null) {
                 list.add(0);
