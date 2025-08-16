@@ -1,0 +1,64 @@
+Easy / Warm-up:
+
+1. Rotate an array by `k` steps to the right.
+2. Find the maximum subarray sum (Kadane’s Algorithm).
+3. Move all zeros to the end while maintaining the order.
+4. Find the missing number from an array containing `1 to n`.
+5. Find duplicate number in an array without modifying it.
+6. Find intersection of two arrays.
+7. Find union of two sorted arrays.
+8. Sort colors (Dutch National Flag problem).
+9. Find the equilibrium index of an array.
+10. Replace every element with the greatest element on its right.
+
+#### **Medium**
+
+11. Search in a rotated sorted array.
+12. Merge two sorted arrays without extra space.
+13. Find first missing positive integer.
+14. Rearrange array in alternating positive and negative numbers.
+15. Find the subarray with a given sum.
+16. Spiral order traversal of a matrix.
+17. Rotate a matrix by 90 degrees in place.
+18. Set matrix zeroes based on zero elements.
+19. Find leaders in an array.
+20. Count inversions in an array.
+
+#### **Advanced**
+
+21. Maximum product subarray.
+22. Subarray sum divisible by `k`.
+23. Find all pairs with a given sum.
+24. Find length of smallest subarray with sum greater than `X`.
+25. Find peak element.
+26. Minimum number of jumps to reach end.
+27. Minimum swaps required to sort the array.
+28. Trapping rain water problem.
+29. Container with most water.
+30. 3Sum problem (find all triplets that sum to zero).
+
+#### **More Complex / Amazon-Specific**
+
+31. 4Sum problem.
+32. Sliding window maximum.
+33. Find k-th largest element using Quickselect.
+34. Product of array except self.
+35. Maximum sum circular subarray.
+36. Longest consecutive sequence.
+37. Number of subarrays with sum equal to `k`.
+38. Minimum operations to make array elements equal.
+39. Find duplicate subarray in array.
+40. Find the median of two sorted arrays.
+
+#### **Bonus / Edge Case Handling**
+
+41. Rotate array to the left by `k` steps.
+42. Merge overlapping intervals.
+43. Find smallest missing number in a sorted array.
+44. Find element that appears once when every other appears twice.
+45. Count the frequency of all elements in O(1) extra space.
+46. Rearrange array so that arr[i] becomes arr[arr[i]].
+47. Check if array can be sorted with at most one swap.
+48. Maximum length of subarray with equal 0s and 1s.
+49. Largest rectangle in histogram (matrix variation possible).
+50. Maximize sum of i*arr[i] among all rotations.
