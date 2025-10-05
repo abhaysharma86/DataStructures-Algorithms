@@ -1,7 +1,7 @@
 package linkedList.circularLinkedList;
 
 
-public class CircularLinkedListDemo {
+public class CircularLinkedListInsertAtEnds {
 
     public static void main(String[] args) {
         Node head = new Node(1);
@@ -14,13 +14,31 @@ public class CircularLinkedListDemo {
         second.next = third;
         third.next = head;
 
+        Node node = insertAtEnds(head, 5);
 
-        Node h = head;
+        Node h = node;
         do {
             System.out.println(h.data);
             h = h.next;
         }
-        while (h != head);
+        while (h != node);
+
+    }
+
+
+    public static Node insertAtEnds(Node head, int data){
+
+        Node new_node = new Node(data);
+
+        Node t = head;
+        do{
+         t = t.next;
+        }while (t.next != head);
+
+        t.next = new_node;
+        new_node.next = head;
+
+        return head;
     }
 
 }
