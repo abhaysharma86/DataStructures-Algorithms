@@ -33,6 +33,10 @@ public class Delete_Last_Node_Of_Singly_Linked_List {
 
         Node n = head;
 
+        if(n.next == null){
+            return null;
+        }
+
         while (n != null){
             if(n.next.next == null){
                 n.next = null;
