@@ -1,15 +1,12 @@
-# Java compiled files
+# Java
 *.class
 
-# Build output
+# Build folders
 /bin/
 /out/
 /target/
 /build/
 
-# IntelliJ IDEA
+# IntelliJ
 .idea/
 *.iml
-
-# OS files
-.DS_Store
