@@ -14,7 +14,10 @@ public class PrintLeftViewBinaryTree {
         root.right.left = new Node(40);
         root.right.right = new Node(60);
 
-        System.out.println(treeLeftView(root));
+//        System.out.println(treeLeftView(root));
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(root.data);
+        System.out.println(leftTreeRecu(root,list));
     }
 
     public static ArrayList<Integer> treeLeftView(Node root){
@@ -34,4 +37,18 @@ public class PrintLeftViewBinaryTree {
         }
         return list;
     }
+
+
+    public static ArrayList<Integer> leftTreeRecu(Node root, ArrayList<Integer> list){
+        if(root == null){
+            return list;
+        }
+        if(root.left != null){
+            list.add(root.left.data);
+        }
+        leftTreeRecu(root.left, list);
+        leftTreeRecu(root.right, list);
+        return list;
+    }
+
 }

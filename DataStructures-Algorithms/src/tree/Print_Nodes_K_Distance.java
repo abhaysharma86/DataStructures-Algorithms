@@ -11,20 +11,34 @@ public class Print_Nodes_K_Distance {
         root.left.right = new Node(50);
         root.right.right = new Node(70);
         root.right.right.right = new Node(80);
-        System.out.println(printKthNode(root,2,new ArrayList<>()));
+//        System.out.println(printKthNode(root,2,new ArrayList<>()));
+        System.out.println(KthLevel(root, 0, 2, new ArrayList<>()));
     }
 
-    public static ArrayList<Integer> printKthNode(Node root, int k , ArrayList<Integer> list){
-        if(root == null){
+    public static ArrayList<Integer> printKthNode(Node root, int k, ArrayList<Integer> list) {
+        if (root == null) {
             return list;
-        }else {
-            if(k == 0){
+        } else {
+            if (k == 0) {
                 list.add(root.data);
                 return list;
             }
-            printKthNode(root.left, k-1, list);
-            printKthNode(root.right, k-1, list);
+            printKthNode(root.left, k - 1, list);
+            printKthNode(root.right, k - 1, list);
         }
+        return list;
+    }
+
+    public static ArrayList<Integer> KthLevel(Node root, int level, int k, ArrayList<Integer> list) {
+        if (root == null) {
+            return list;
+        }
+        if (level == k) {
+            list.add(root.data);
+            return list;
+        }
+        KthLevel(root.left, level + 1, k,list);
+        KthLevel(root.right, level + 1, k, list);
         return list;
     }
 
